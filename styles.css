@@ -615,7 +615,7 @@ margin-bottom: 300px;
       
    } */
 
-/*    .form-x{
+   .form-x{
      height: 20px;
      position: absolute;
      z-index: 1000;
@@ -623,7 +623,8 @@ margin-bottom: 300px;
      right: 100px;
      left: 350px;
      margin: auto;
-   } */
+     display:none;
+   } 
   .popup {
    position:absolute;
    z-index: 20;
@@ -1369,7 +1370,7 @@ margin-bottom: 300px;
        left: 0;
     z-index: 10;
      }
-
+ */
      .form-x{
        height: 20px;
        position: absolute;
@@ -1378,8 +1379,9 @@ margin-bottom: 300px;
        right: 100px;
        left: 410px;
        margin: auto;
+       display:none;
      }
- */
+
     .popup {
      position:absolute;
      z-index: 20;
@@ -2078,7 +2080,7 @@ margin: auto;
    left: 0;
 z-index: 10;
  }
-
+*/
  .form-x{
    height: 20px;
    position: absolute;
@@ -2087,7 +2089,8 @@ z-index: 10;
    right: 100px;
    left: 400px;
    margin: auto;
- } */
+   display:none;
+ } 
 .popup {
  position:absolute;
  z-index: 20;
