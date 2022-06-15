@@ -14,7 +14,7 @@ body {
   font-style: normal;
 }
 
-@media (max-width: 719px) {
+@media (max-width: 640px) {
 
   h1 {
     font-family: "opensans-bold";
@@ -615,7 +615,7 @@ margin-bottom: 300px;
       
    } */
 
-   .form-x{
+   .form-x_hidden{
      height: 20px;
      position: absolute;
      z-index: 1000;
@@ -625,7 +625,7 @@ margin-bottom: 300px;
      margin: auto;
      display:none;
    } 
-  .popup {
+  .popup_hidden {
    position:absolute;
    z-index: 20;
    max-width: 290px;
@@ -726,7 +726,7 @@ margin-bottom: 300px;
 
 
 
-@media (min-width: 720px) and (max-width: 1199px) {
+@media (min-width:641px) and (max-width: 1199px) {
 
   main {
 
@@ -1371,7 +1371,7 @@ margin-bottom: 300px;
     z-index: 10;
      }
  */
-     .form-x{
+     .form-x_hidden{
        height: 20px;
        position: absolute;
        z-index: 1000;
@@ -1382,7 +1382,7 @@ margin-bottom: 300px;
        display:none;
      }
 
-    .popup {
+    .popup_hidden {
      position:absolute;
      z-index: 20;
      width: 290px;
@@ -2081,7 +2081,7 @@ margin: auto;
 z-index: 10;
  }
 */
- .form-x{
+ .form-x_hidden{
    height: 20px;
    position: absolute;
    z-index: 1000;
@@ -2091,7 +2091,7 @@ z-index: 10;
    margin: auto;
    display:none;
  } 
-.popup {
+.popup_hidden {
  position:absolute;
  z-index: 20;
  width: 290px;
