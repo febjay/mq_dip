@@ -1904,11 +1904,11 @@ body {
 
   .Container1 {
     display: flex;
-    max-width: 1920px;
-
-    justify-content: center;
+    width: 1200px;
+    justify-content: space-between;
+    margin: auto;
   }
-  
+
   .news-name {
     font-family: opensans-bold;
     line-height: 24px;
