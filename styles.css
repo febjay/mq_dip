@@ -22,10 +22,10 @@ body {
     font-family: "opensans-bold";
     color: white;
     text-transform: UPPERCASE;
-    font-size: 20px;
-    width: 70%;
+    font-size: 25px;
+    width: 80%;
     text-align: center;
-    margin: 20px auto;
+    margin: 0px auto 150px auto;
     z-index: 3;
   }
 
@@ -48,15 +48,13 @@ body {
   }
 
   h5{
-    font-size: 14px;
+    font-size: 17px;
     text-transform: UPPERCASE;
+    font-family: opensans-bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
   }
 
-  span {
-    text-transform: UPPERCASE;
-    font-size: 10px;
-    color: #b59f5b;
-  }
 
   p {
     margin-top: 30px;
@@ -73,6 +71,10 @@ body {
   .header {
     background-image: url("img/banner-mobile.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
   }
 
   .header::after {
@@ -84,7 +86,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 640px;
+
   }
 
   #menu-toggle {
@@ -182,6 +184,8 @@ body {
     width: 70%;
     z-index: 1;
     text-align: center;
+    margin: auto;
+    margin-top: 200px;
   }
 
   .container {
@@ -357,7 +361,7 @@ body {
     position: relative;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 40px;
+    margin: auto;
     font-family: opensans-bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -410,17 +414,21 @@ body {
     font-size: 14px;
     font-family: opensans-bold;
     text-transform: UPPERCASE;
+    margin:0;
   }
 
   .search-form {
     display: flex;
-    margin-top: 45px;
+    margin-top: 45px auto;
+    width: 85%;
 
   }
-
+  .aside-post{
+    width: 85%;
+  }
   .search-field {
     font-family: opensans-regular;
-    width: 100%;
+
     margin: auto;
     margin-right: 0px;
     line-height: 40px;
@@ -487,7 +495,7 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .tags {
@@ -625,35 +633,39 @@ body {
     margin: auto;
   }
 
-  .first-img{
-
-    background-color: black;
-  }
-
   .squad-border{
     border: 2px #b59f5b solid;
-    margin-top: 40px;
+    max-width: 340px;
+    margin: -30px auto 30px auto;
   }
 
   .last {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 300px;
+
   }
 
   .text-bottom {
     display: flex;
-    margin-top: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
     flex-direction: column;
-    width: 80%;
+    padding-bottom: 20px;
+  }
+
+  .last-last {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
   }
 
   .bottom-product {
     display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 10px 20px;
+
   }
 
   .a-product{
@@ -672,18 +684,15 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     color: white;
-    margin-right: 25px;
+
   }
 
-  .price{
-    margin-left: 25px;
-    margin-right: 110px;
-  }
+
 
   .sale-price {
     font-family: opensans-bold;
     font-size: 16px;
-    margin-top:20px;
+
   }
 
   .real-price{
@@ -857,8 +866,11 @@ body {
   }
 
   h5{
-    font-size: 14px;
+    font-size: 19px;
     text-transform: UPPERCASE;
+    font-family: opensans-bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
 
   span {
@@ -904,10 +916,8 @@ body {
 
   .menu-btn {
     display: flex;
+    position: relative;
     align-items: center;
-    position: absolute;
-    top: 30px;
-    right: 15px;
     width: 22px;
     height: 26px;
     cursor: pointer;
@@ -917,7 +927,6 @@ body {
   .menu-btn > span,
   .menu-btn > span::before,
   .menu-btn > span::after {
-    display: block;
     position: absolute;
     width: 100%;
     height: 3px;
@@ -956,14 +965,19 @@ body {
   .container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    
+    margin: auto;
+    width: 85%;
+    padding-top: 30px;
+
   }
 
   .header {
     background-image: url("img/banner-bg-tablet.jpg");
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+
   }
 
   .header::after {
@@ -980,7 +994,7 @@ body {
 
   .Container1 {
     display: flex;
-    width: 90%;
+    width: 85%;
     margin: auto;
     justify-content: space-between;
     max-width: 1200px;
@@ -1197,7 +1211,7 @@ body {
   .search-form {
     display: flex;
     margin-top: 45px;
-    width: 100%;
+
   }
 
   .search-field {
@@ -1215,6 +1229,8 @@ body {
 
   .grey-polosa{
     border: 1px grey solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .button {
     width: 50px;
@@ -1335,7 +1351,7 @@ body {
   .social-links {
     display: flex;
     background-color: #f4f7f6;
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
 
@@ -1411,8 +1427,9 @@ body {
   .last-last {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 85%;
     margin: auto;
+    align-items:flex-start;
   }
 
   .first-img{
@@ -1423,7 +1440,8 @@ body {
 
   .squad-border{
     border: 2px #b59f5b solid;
-    margin-bottom: 50px;
+    max-width: 340px;
+    margin: -30px auto 30px auto;
 
   }
 
@@ -1444,9 +1462,10 @@ body {
 
   .bottom-product {
     display: flex;
-    justify-content: center;
-    width: 90%;
-    margin:0px auto 5px auto;
+    justify-content: space-between;
+
+    padding: 0px 20px 10px 20px;
+
   }
   .a-product{
     color: #b59f5b;
@@ -1467,10 +1486,6 @@ body {
     margin-right: 25px;
   }
 
-  .price{
-    margin-left: 25px;
-    margin-right: 110px;
-  }
 
   .sale-price {
     font-family: opensans-bold;
@@ -2192,8 +2207,8 @@ body {
 
   .squad-border{
     border: 2px #b59f5b solid;
-
-    width: 340px;
+    margin: -30px auto 0px auto;
+    max-width: 340px;
   }
 
   .last {
@@ -2219,7 +2234,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin:0px auto 15px auto;
+    padding: 0px 20px 10px 20px;
+
   }
   .a-product{
     color: #b59f5b;
@@ -2281,7 +2297,6 @@ body {
   z-index: 10;
   display: none;
 }
-
 .popup {
   position:fixed;
   z-index: 20;
@@ -2291,6 +2306,7 @@ body {
   right: 100px;
   left:100px;
   margin: auto;
+
   top:25%;
 }
 
@@ -2298,7 +2314,7 @@ body {
   height: 20px;
   position: fixed;
   z-index: 1000;
-  top:180px;
+  top:200px;
   right: 100px;
   left: 400px;
   margin: auto;
