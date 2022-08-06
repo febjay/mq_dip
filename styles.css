@@ -25,10 +25,13 @@ body {
     font-size: 25px;
     width: 80%;
     text-align: center;
-    margin: 0px auto 150px auto;
+    margin: 20px auto 150px auto;
     z-index: 3;
   }
-
+  a {
+    text-decoration: none;
+    color: black;
+  }
   h2 {
     margin: 25px auto 25px auto;
     font-family: "opensans-bold";
@@ -63,9 +66,10 @@ body {
     line-height: 22px;
   }
 
-  a {
-    text-decoration: none;
+  .tag{
+
     color: black;
+    font-size: 13px;
   }
 
   .header {
@@ -225,7 +229,10 @@ body {
     background:url(img/trend1.jpg);
     background-size: cover;
   }
-
+  .text-info {
+    max-width: 381px;
+    border-bottom: 1px grey solid;
+  }
   .second-trend{
     background:url(img/trend2.jpg);
     background-size: cover;
@@ -252,7 +259,7 @@ body {
     border: 3px solid #b59f5b;
     width: 100%;
     margin: 85px 15px 15px 15px;
-    padding: 10px 20px 0px 20px;
+    padding: 25px;
   }
 
   .a-slider-news-name{
@@ -260,7 +267,7 @@ body {
     text-transform: UPPERCASE;
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .slider-news-name {
@@ -284,6 +291,12 @@ body {
     margin: 0;
   }
 
+  .themas {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
   .thema {
     text-transform: UPPERCASE;
     font-size: 10px;
@@ -296,6 +309,8 @@ body {
 
   .a-thema{
     color: #b59f5b;
+    font-size: 14px;
+    text-decoration: none;
   }
 
   .main-news{
@@ -309,7 +324,7 @@ body {
   .a-thema-in-news{
     font-family: "opensans-bold";
     text-transform: UPPERCASE;
-    font-size: 14px;
+    font-size: 15px;
     color: #b59f5b;
   }
 
@@ -323,7 +338,7 @@ body {
 
   .news-name {
     font-family: opensans-bold;
-    font-size: 12px;
+    font-size: 17px;
     text-transform: uppercase;
   }
 
@@ -339,9 +354,7 @@ body {
     font-size: 12px;
   }
 
-  .grey-polosa {
-    border: 1px grey solid;
-  }
+
 
   .news-date {
     display: inline;
@@ -363,7 +376,7 @@ body {
     box-sizing: border-box;
     margin: auto;
     font-family: opensans-bold;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
   }
 
@@ -392,21 +405,16 @@ body {
 
   .last-post {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 22px;
     margin-top: 22px;
-    margin-left: 0px;
+    margin-bottom: 25px;
   }
+
 
   .last-post-list {
     box-sizing: border-box;
-    width: 190px;
     margin-left: 10px;
   }
 
-  .main-text{
-    max-width: 300px;
-  }
 
   .last-post-link {
     text-decoration: none;
@@ -419,8 +427,7 @@ body {
 
   .search-form {
     display: flex;
-    margin-top: 45px auto;
-    width: 85%;
+    justify-content:center;
 
   }
   .aside-post{
@@ -428,15 +435,14 @@ body {
   }
   .search-field {
     font-family: opensans-regular;
-
-    margin: auto;
-    margin-right: 0px;
+    width:275px;
     line-height: 40px;
     background: #f4f7f6;
     border: none;
     font-size: 13px;
     height: 50px;
     padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 45px;
   }
 
@@ -540,14 +546,15 @@ body {
     content: "";
     display: block;
     position: absolute;
-    width: 300px;
+    width: 100%;
     border-bottom: 1px solid #eeeeee;
   }
 
   .categories-link {
     text-decoration: none;
     color: black;
-    line-height: 32px;
+    line-height: 40px;
+    font-size: 16px;
   }
 
   .amount {
@@ -995,7 +1002,7 @@ body {
   .Container1 {
     display: flex;
     width: 85%;
-    margin: auto;
+    margin:40px auto 0px auto;
     justify-content: space-between;
     max-width: 1200px;
   }
@@ -1068,7 +1075,7 @@ body {
     border: 3px solid #b59f5b;
     width: 100%;
     margin: 85px 15px 15px 15px;
-    padding: 30px 30px 0px 30px;
+    padding: 30px;
   }
 
   .a-slider-news-name{
@@ -1337,7 +1344,7 @@ body {
   .categories-link {
     text-decoration: none;
     color: black;
-    line-height: 32px;
+    line-height: 40px;
   }
 
   .amount {
@@ -1442,6 +1449,7 @@ body {
     border: 2px #b59f5b solid;
     max-width: 340px;
     margin: -30px auto 30px auto;
+    height: 258px;
 
   }
 
@@ -1706,12 +1714,14 @@ body {
     padding: 0px;
 
   }
-
+  .aside-posts{
+    margin-top: 40px;
+  }
   .aside-news-title {
     position: relative;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 40px;
+    margin: auto;
     font-family: opensans-bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -1723,12 +1733,12 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+    width: 65px;
     margin: 5px auto;
     text-align: center;
     border-bottom: 3px solid #b59f5b;
     opacity: 0.4;
   }
-
   .header {
     background-image: url("img/banner-bg.jpg");
     background-size: cover;
@@ -1813,12 +1823,6 @@ body {
     margin-left: 20px;
   }
 
-  .themas {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
 
   .blockTrend {
     display: flex;
@@ -1887,7 +1891,7 @@ body {
     border: 5px solid #b59f5b;
     width: 100%;
     margin: 80px 20px 20px 20px;
-    padding: 10px 20px 0px 20px;
+    padding: 20px;
   }
 
   .a-slider-news-name{
@@ -1904,6 +1908,7 @@ body {
 
     justify-content: center;
   }
+  
   .news-name {
     font-family: opensans-bold;
     line-height: 24px;
@@ -1912,17 +1917,21 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+
   .news-card:nth-child(1){
     margin-top: 40px;
   }
+
   .news-card {
     display: flex;
     margin-bottom: 40px;
     max-width: 840px;
   }
+
   .news-card:nth-child(5){
     margin-bottom: 0px;
   }
+
   .thematics {
     color: #b59f5b;
     font-size: 14px;
@@ -2209,6 +2218,7 @@ body {
     border: 2px #b59f5b solid;
     margin: -30px auto 0px auto;
     max-width: 340px;
+    height: 222px;
   }
 
   .last {
@@ -2216,12 +2226,11 @@ body {
     flex-direction: column;
   }
 
-
-
   .last-last {
     display: flex;
     margin: auto;
     justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 40px;
     max-width: 1200px;
   }
@@ -2240,6 +2249,7 @@ body {
   .a-product{
     color: #b59f5b;
   }
+
   .buy-button {
     box-sizing: border-box;
     width: 40%;
@@ -2273,20 +2283,6 @@ body {
     padding-right: 0px;
   }
 
-  /*
-  body:after {
-  content: "";
-  background-color: #000000;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
-*/
-
 .b-popup-hidden{
   width:100%;
   height: 5000px;
@@ -2297,6 +2293,7 @@ body {
   z-index: 10;
   display: none;
 }
+
 .popup {
   position:fixed;
   z-index: 20;
@@ -2306,7 +2303,6 @@ body {
   right: 100px;
   left:100px;
   margin: auto;
-
   top:25%;
 }
 
@@ -2358,7 +2354,6 @@ body {
 .circle {
   width: 10px;
   height: 10px;
-
 }
 
 .span-circle{
@@ -2382,8 +2377,8 @@ body {
   background-color: #f4f7f6;
   font-size: 11px;
   font-family: opensans-regular;
-
 }
+
 .send-button{
   margin-top: 20px;
   box-sizing: border-box;
@@ -2396,8 +2391,4 @@ body {
   text-transform: uppercase;
   color: white;
 }
-
-
-
-
 }
