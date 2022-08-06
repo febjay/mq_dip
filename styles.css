@@ -231,7 +231,7 @@ body {
   }
   .text-info {
     max-width: 381px;
-    border-bottom: 1px grey solid;
+    border-bottom: 1px #eeeeee solid;
   }
   .second-trend{
     background:url(img/trend2.jpg);
@@ -1235,7 +1235,7 @@ body {
   }
 
   .grey-polosa{
-    border: 1px grey solid;
+    border: 1px #eeeeee solid;
     margin-top: 10px;
     margin-bottom: 30px;
   }
