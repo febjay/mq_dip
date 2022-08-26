@@ -1,24 +1,138 @@
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
   font-family: "opensans-bold";
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  src: url(fonts/OpenSans-Bold.woff);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "opensans-regular";
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  src: url(fonts/OpenSans-Regular.woff);
   font-weight: normal;
   font-style: normal;
 }
 
+.hidden-text {
+  display: none;
+} 
+.button:hover, .email-button:hover, .buy-button:hover, .send-button:hover{
+  background-color: #383838;
+}
+.a-news-name:hover {
+  color: #b59f5b;
+}
+.picture {
+  margin: auto;
+}
+.last{
+  align-self: stretch;
+}
+
+.form-x{
+  display: block; 
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -25px;
+  right: 0; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;  
+  background-image: url(svg/form-x.svg);
+}
+.radio-button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.radio-text:before {
+  content: "";
+  display: inline-block;
+  background-image: url(svg/form-empty-circle.svg);
+  height: 18px;
+  width: 18px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+ }
+ 
+ .radio-button:checked ~ .radio-text:before {
+  background-image: url(svg/form-circle.svg);
+ }
+ 
+ .radio-text {
+   font-size: 13px;
+   margin-right: 15px;
+ }
+select.field {
+  background-image: url(svg/form-arrows.svg);
+  background-size: 10px auto;
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  margin-bottom: 30px;
+}
+.field {
+  display: block;
+  height: 47px;
+  width: 100%;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  background-color: #f4f7f6;
+  border-radius: 0;
+  border: 1px solid #f4f7f6;
+
+  font-family: inherit;
+  font-size: 13px;
+}
+.form-hint {
+  display: block;
+  margin: 23px 0 8px;
+  font-size: 13px;
+}
+textarea.field {
+  min-height: 90px;
+  max-width: 88%;
+  padding: 17px;
+}
+.send-button{
+  margin-top: 20px;
+  box-sizing: border-box;
+  height: 50px;
+  background-color: #b59f5b;
+  border: none;
+  text-align: center;
+  font-family: opensans-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+}
+
+.b-popup-hidden{
+  width:100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:absolute;
+  top:0px;
+  z-index: 10;
+ display: none;
+
+}
+
 @media (max-width: 640px) {
 
-  h1 {
+  .h1 {
     font-family: "opensans-bold";
     color: white;
     text-transform: UPPERCASE;
@@ -28,16 +142,16 @@ body {
     margin: 20px auto 150px auto;
     z-index: 3;
   }
-  a {
+  .a-news-name {
     text-decoration: none;
     color: black;
   }
-  h2 {
+  .all-h2 {
     margin: 25px auto 25px auto;
     font-family: "opensans-bold";
   }
 
-  h2::after {
+  .all-h2::after {
     content: "";
     display: block;
     position: absolute;
@@ -50,7 +164,7 @@ body {
     opacity: 0.4;
   }
 
-  h5{
+  .all-h5{
     font-size: 17px;
     text-transform: UPPERCASE;
     font-family: opensans-bold;
@@ -59,7 +173,7 @@ body {
   }
 
 
-  p {
+  .p {
     margin-top: 30px;
     font-family: opensans-regular;
     font-size: 15px;
@@ -67,13 +181,13 @@ body {
   }
 
   .tag{
-
+ text-decoration: none;
     color: black;
     font-size: 13px;
   }
 
   .header {
-    background-image: url("img/banner-mobile.jpg");
+    background-image: url("images/banner-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -159,6 +273,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
+    
   }
 
   .menu-item:hover {
@@ -226,25 +341,25 @@ body {
   }
 
   .first-trend{
-    background:url(img/trend1.jpg);
+    background:url(images/trend1.jpg);
     background-size: cover;
   }
   .text-info {
-    max-width: 381px;
+    
     border-bottom: 1px #eeeeee solid;
   }
   .second-trend{
-    background:url(img/trend2.jpg);
+    background:url(images/trend2.jpg);
     background-size: cover;
   }
 
   .third-trend{
-    background:url(img/trend3.jpg);
+    background:url(images/trend3.jpg);
     background-size: cover;
   }
 
   .fourth-trend{
-    background:url(img/trend4.jpg);
+    background:url(images/trend4.jpg);
     background-size: cover;
   }
 
@@ -273,6 +388,7 @@ body {
   .slider-news-name {
     text-transform: UPPERCASE;
     margin-top: 10px;
+    margin-bottom: 0;
     font-size: 12px;
     font-family: "opensans-regular";
     color: white;
@@ -326,6 +442,7 @@ body {
     text-transform: UPPERCASE;
     font-size: 15px;
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .thema-in-news:nth-child(2){
@@ -677,6 +794,7 @@ body {
 
   .a-product{
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .buy-button {
@@ -715,16 +833,7 @@ body {
     padding-right: 0px;
   }
 
-  .b-popup-hidden{
-    width:100%;
-    height: 5000px;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:absolute;
-    top:0px;
-    z-index: 10;
-    display: none;
-  }
+ 
 
   .popup {
     position:absolute;
@@ -740,92 +849,13 @@ body {
     margin: auto;
   }
 
-  .form-x{
-    height: 20px;
-    position: absolute;
-    z-index: 1000;
-    top:100px;
-    right: 100px;
-    left: 350px;
-    margin: auto;
-
-  }
-
   .h1-popup{
     text-align: center;
   }
 
-  .field{
-    background-color: #f4f7f6;
-    height: 50px;
-    display: flex;
-  }
-  .text{
-    margin-top: 15px;
-    font-size:11px;
-  }
+ 
 
-  .text-question{
-    padding-top: 10px;
-    font-size:11px;
-  }
-
-  .text-field{
-    margin-left: 15px;
-    margin-top: 15px;
-    font-size: 11px;
-    font-family: opensans-regular;
-  }
-
-  .arrows {
-    margin-top: 15px;
-    width: 10px;
-    height: 20px;
-    margin-left: 140px;
-  }
-
-  .circle {
-    width: 10px;
-    height: 10px;
-  }
-
-  .span-circle{
-    margin-right: 10px;
-    color: black;
-    padding-left: 0px;
-    font-size: 11px;
-    font-family: opensans-regular;
-    text-transform: none;
-  }
-
-  .comment-form{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .field-comment{
-    height: 100px;
-    padding-left: 15px;
-    padding-top: 15px;
-
-    background-color: #f4f7f6;
-    font-size: 11px;
-    font-family: opensans-regular;
-
-  }
-
-  .send-button{
-    margin-top: 20px;
-    box-sizing: border-box;
-    height: 50px;
-    background-color: #b59f5b;
-    border: none;
-    text-align: center;
-    font-family: opensans-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: white;
-  }
+  
 }
 
 
@@ -843,7 +873,7 @@ body {
     width: 45%;
   }
 
-  h1 {
+  .h1 {
     font-family: "opensans-bold";
     color: white;
     text-transform: UPPERCASE;
@@ -854,12 +884,12 @@ body {
     z-index: 1;
   }
 
-  h2 {
+  .all-h2 {
     margin: 25px auto 25px auto;
     font-family: "opensans-bold";
   }
 
-  h2::after {
+  .all-h2::after {
     content: "";
     display: block;
     position: absolute;
@@ -872,7 +902,7 @@ body {
     opacity: 0.4;
   }
 
-  h5{
+  .all-h5{
     font-size: 19px;
     text-transform: UPPERCASE;
     font-family: opensans-bold;
@@ -880,20 +910,14 @@ body {
     margin-top: 20px;
   }
 
-  span {
-    text-transform: UPPERCASE;
-    font-size: 10px;
-    color: #b59f5b;
-  }
-
-  p {
+  .p {
     margin-top: 30px;
     font-family: opensans-regular;
     font-size: 15px;
     line-height: 22px;
   }
 
-  a {
+  .a-news-name{
     text-decoration: none;
     color: black;
   }
@@ -974,17 +998,17 @@ body {
     justify-content: space-between;
     margin: auto;
     width: 85%;
-    padding-top: 30px;
+    
 
   }
 
   .header {
-    background-image: url("img/banner-bg-tablet.jpg");
+    background-image: url("images/banner-bg-tablet.jpg");
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
-
+    padding-top: 30px;
   }
 
   .header::after {
@@ -1015,7 +1039,9 @@ body {
   .text-h1 {
     display: flex;
   }
-
+.text-info{
+border-bottom: 1px solid #eeeeee;
+}
   .now-in-trend {
     display: flex;
     text-transform: UPPERCASE;
@@ -1042,22 +1068,22 @@ body {
   }
 
   .first-trend{
-    background:url(img/trend1.jpg);
+    background:url(images/trend1.jpg);
     background-size: cover;
   }
 
   .second-trend{
-    background:url(img/trend2.jpg);
+    background:url(images/trend2.jpg);
     background-size: cover;
   }
 
   .third-trend{
-    background:url(img/trend3.jpg);
+    background:url(images/trend3.jpg);
     background-size: cover;
   }
 
   .fourth-trend{
-    background:url(img/trend4.jpg);
+    background:url(images/trend4.jpg);
     background-size: cover;
   }
 
@@ -1076,6 +1102,7 @@ body {
     width: 100%;
     margin: 85px 15px 15px 15px;
     padding: 30px;
+    align-self: end;
   }
 
   .a-slider-news-name{
@@ -1091,6 +1118,7 @@ body {
   .slider-news-name {
     text-transform: UPPERCASE;
     margin-top: 10px;
+    margin-bottom: 0;
     font-size: 12px;
     font-family: "opensans-regular";
     color: white;
@@ -1123,6 +1151,7 @@ body {
   .a-thema{
     color: #b59f5b;
     font-size: 15px;
+    text-decoration: none;
   }
 
   .news-image {
@@ -1134,6 +1163,7 @@ body {
     text-transform: UPPERCASE;
     font-size: 14px;
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .thema-in-news:nth-child(2){
@@ -1234,11 +1264,6 @@ body {
 
   }
 
-  .grey-polosa{
-    border: 1px #eeeeee solid;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
   .button {
     width: 50px;
     height: 50px;
@@ -1319,7 +1344,10 @@ body {
     margin-bottom: 7px;
     margin-right: 5px;
   }
-
+ .tag {
+  text-decoration: none;
+    color: black;
+ }
   .categories-list {
     margin-top: 10px;
     list-style-type: none;
@@ -1439,17 +1467,11 @@ body {
     align-items:flex-start;
   }
 
-  .first-img{
-    margin: auto;
-    margin-bottom: 0px;
-    background-color: black;
-  }
-
+ 
   .squad-border{
     border: 2px #b59f5b solid;
     max-width: 340px;
     margin: -30px auto 30px auto;
-    height: 258px;
 
   }
 
@@ -1477,6 +1499,7 @@ body {
   }
   .a-product{
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .buy-button {
@@ -1536,16 +1559,7 @@ body {
     opacity: 0.4;
   }
 
-  .b-popup-hidden{
-    width:100%;
-    height: 5000px;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:absolute;
-    top:0px;
-    z-index: 10;
-    display: none;
-  }
+ 
 
   .popup {
     position:fixed;
@@ -1559,101 +1573,20 @@ body {
     margin: auto;
     top:30%;
   }
-
-  .form-x{
-    height: 20px;
-    position: fixed ;
-    z-index: 1000;
-    top:320px;
-    right: 100px;
-    left: 410px;
-    margin: auto;
-  }
-
   .h1-popup{
     text-align: center;
   }
 
-  .field{
-    background-color: #f4f7f6;
-    height: 50px;
-    display: flex;
-  }
 
-  .text{
-    margin-top: 15px;
-    font-size:11px;
-  }
-
-  .text-question{
-    padding-top: 10px;
-    font-size:11px;
-  }
-
-  .text-field{
-    margin-left: 15px;
-    margin-top: 15px;
-    font-size: 11px;
-    font-family: opensans-regular;
-  }
-
-  .arrows {
-    margin-top: 15px;
-    width: 10px;
-    height: 20px;
-    margin-left: 140px;
-  }
-
-  .circle {
-    width: 10px;
-    height: 10px;
-  }
-
-  .span-circle{
-    margin-right: 10px;
-    color: black;
-    padding-left: 0px;
-    font-size: 11px;
-    font-family: opensans-regular;
-    text-transform: none;
-  }
-
-  .comment-form{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .field-comment{
-    height: 100px;
-    padding-left: 15px;
-    padding-top: 15px;
-    background-color: #f4f7f6;
-    font-size: 11px;
-    font-family: opensans-regular;
-
-  }
-
-  .send-button{
-    margin-top: 20px;
-    box-sizing: border-box;
-    height: 50px;
-    background-color: #b59f5b;
-    border: none;
-    text-align: center;
-    font-family: opensans-bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: white;
-  }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
 
   body {
     margin: 0px;
   }
 
-  h1 {
+  .h1 {
     font-family: "opensans-bold";
     color: white;
     text-transform: UPPERCASE;
@@ -1664,12 +1597,12 @@ body {
     z-index: 3;
   }
 
-  h2 {
+ .all-h2 {
     margin: 25px auto 25px auto;
     font-family: "opensans-bold";
   }
 
-  h2::after {
+  .all-h2::after {
     content: "";
     display: block;
     position: absolute;
@@ -1682,7 +1615,7 @@ body {
     opacity: 0.4;
   }
 
-  h5{
+  .all-h5{
     font-size: 19px;
     text-transform: UPPERCASE;
     font-family: opensans-bold;
@@ -1690,15 +1623,14 @@ body {
     margin-top: 20px;
   }
 
-  p {
+  .p {
     margin-top: 30px;
-    padding-right: 25px;
     font-family: opensans-regular;
     font-size: 14px;
     line-height: 22px;
   }
 
-  a {
+  .a-news-name {
     text-decoration: none;
     color: black;
   }
@@ -1740,11 +1672,12 @@ body {
     opacity: 0.4;
   }
   .header {
-    background-image: url("img/banner-bg.jpg");
+    background-image: url("images/banner-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+    padding-top: 20px;
   }
 
   .header::after {
@@ -1765,7 +1698,6 @@ body {
     z-index: 2;
     width: 1200px;
     margin: auto;
-    padding-top: 20px;
     align-items: center;
   }
 
@@ -1779,6 +1711,7 @@ body {
     font-size: 11px;
     font-family: opensans-regular;
     text-transform: UPPERCASE;
+    text-decoration: none;
   }
 
   .src-menu-item {
@@ -1795,6 +1728,7 @@ body {
 
   .a-thema{
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .thema:nth-child(2){
@@ -1813,6 +1747,7 @@ body {
     text-transform: UPPERCASE;
     font-size: 14px;
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .thema-in-news:nth-child(2){
@@ -1862,22 +1797,22 @@ body {
   }
 
   .first-trend{
-    background:url(img/trend1.jpg);
+    background:url(images/trend1.jpg);
     background-size: cover;
   }
 
   .second-trend{
-    background:url(img/trend2.jpg);
+    background:url(images/trend2.jpg);
     background-size: cover;
   }
 
   .third-trend{
-    background:url(img/trend3.jpg);
+    background:url(images/trend3.jpg);
     background-size: cover;
   }
 
   .fourth-trend{
-    background:url(img/trend4.jpg);
+    background:url(images/trend4.jpg);
     background-size: cover;
   }
 
@@ -1888,10 +1823,11 @@ body {
   .text-block {
     position: relative;
     z-index: 2;
-    border: 5px solid #b59f5b;
+    border: 3px solid #b59f5b;
     width: 100%;
-    margin: 80px 20px 20px 20px;
+    margin:20px;
     padding: 20px;
+   align-self: end;
   }
 
   .a-slider-news-name{
@@ -1947,8 +1883,10 @@ body {
   .text-info {
     box-sizing: border-box;
     margin-left: 20px;
-    width: 370px;
+  
+    
   }
+  
   .data {
     display: flex;
     flex-wrap: wrap;
@@ -2081,7 +2019,9 @@ body {
     padding-left: 0;
     margin-top: 40px;
   }
-
+.slider-news-name {
+  margin-bottom: 0;
+}
   .tags-container {
     display: block;
     list-style-type: none;
@@ -2097,7 +2037,10 @@ body {
     margin-bottom: 7px;
     margin-right: 5px;
   }
-
+.tag {
+  text-decoration: none;
+    color: black;
+}
   .categories-list {
     margin-top: 10px;
     list-style-type: none;
@@ -2208,17 +2151,11 @@ body {
     margin-left: 60px;
   }
 
-  .first-img{
-    margin: auto;
-    margin-bottom: 0px;
-    background-color: black;
-  }
 
   .squad-border{
     border: 2px #b59f5b solid;
     margin: -30px auto 0px auto;
     max-width: 340px;
-    height: 222px;
   }
 
   .last {
@@ -2248,6 +2185,7 @@ body {
   }
   .a-product{
     color: #b59f5b;
+    text-decoration: none;
   }
 
   .buy-button {
@@ -2283,16 +2221,7 @@ body {
     padding-right: 0px;
   }
 
-.b-popup-hidden{
-  width:100%;
-  height: 5000px;
-  background-color: rgba(0,0,0,0.5);
-  overflow:hidden;
-  position:absolute;
-  top:0px;
-  z-index: 10;
-  display: none;
-}
+
 
 .popup {
   position:fixed;
@@ -2306,89 +2235,10 @@ body {
   top:25%;
 }
 
-.form-x{
-  height: 20px;
-  position: fixed;
-  z-index: 1000;
-  top:200px;
-  right: 100px;
-  left: 400px;
-  margin: auto;
-}
-
 .h1-popup{
   text-align: center;
   margin-top: 0px;
 }
 
-.field{
-  background-color: #f4f7f6;
-  height: 50px;
-  display: flex;
-}
 
-.text{
-  margin-top: 15px;
-  font-size:11px;
-}
-
-.text-question{
-  padding-top: 10px;
-  font-size:11px;
-}
-
-.text-field{
-  margin-left: 15px;
-  margin-top: 15px;
-  font-size: 11px;
-  font-family: opensans-regular;
-}
-
-.arrows {
-  margin-top: 15px;
-  width: 10px;
-  height: 20px;
-  margin-left: 120px;
-}
-
-.circle {
-  width: 10px;
-  height: 10px;
-}
-
-.span-circle{
-  margin-right: 10px;
-  color: black;
-  padding-left: 0px;
-  font-size: 11px;
-  font-family: opensans-regular;
-  text-transform: none;
-}
-
-.comment-form{
-  display: flex;
-  flex-direction: column;
-}
-
-.field-comment{
-  height: 100px;
-  padding-left: 15px;
-  padding-top: 15px;
-  background-color: #f4f7f6;
-  font-size: 11px;
-  font-family: opensans-regular;
-}
-
-.send-button{
-  margin-top: 20px;
-  box-sizing: border-box;
-  height: 50px;
-  background-color: #b59f5b;
-  border: none;
-  text-align: center;
-  font-family: opensans-bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: white;
-}
 }
