@@ -6,10 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>DIPLOM</title>
 </head>
-
 <body>
+  
+  <div class="b-popup-hidden">
+
+    <div class="popup">
+      <button class="form-x" type="button">
+				<span class="hidden-text">Закрыть попап</span>
+			</button>
+      <form class="feedback-form">
+     <h2 class="h1-popup all-h2">ВАШ ФИДБЕК</h2>
+     <label class="feedback-form-group">
+      <span class="form-hint">Как часто вы заходите на сайт?</span>
+      <select class="field"> 
+        <option>Каждый день</option>
+        <option>Раз в неделю</option>
+      </select>
+    </label>
+
+     <p class="form-hint">Вы подписаны на e-mail рассылку?</p>
+     <label>
+      <input class="radio-button" type="radio" name="radio-group">
+      <span class="radio-text">Да</span>
+    </label>
+    <label>
+      <input class="radio-button" type="radio" name="radio-group">
+      <span class="radio-text">Нет</span>
+    </label>
+     <label class="feedback-form-group">
+      <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+      <textarea class="field"  placeholder="Может, больше рецептов?" required></textarea>
+      
+    </label>
+    <button class="send-button" type="submit">
+      <span class="send">Отправить</span> 
+    </button>
+  </form>
+       
+    
+
+   </div> 
+
+ </div> 
+ 
+
   <header class="header">
     <div class="container">
       <div class="header-logo">
@@ -34,43 +76,13 @@
     </div>
 
     <div class="text-h1">
-      <h1>Блог о творчестве, спорте, и образе жизни</h1>
+      <h1 class="h1">Блог о творчестве, спорте, и образе жизни</h1>
     </div>
 
   </header>
 
-  <div class="b-popup-hidden">
-
-    <div class="popup">
-      <img class="form-x" src="svg/form-x.svg" alt="x">
-      <h2 class="h1-popup">ВАШ ФИДБЕК</h2>
-      <p class="text-question">Как часто вы заходите на сайт?</p>
-      <div class="field">
-        <p class="text-field"> Почти каждый день</p>
-        <img class="arrows" src="svg/form-arrows.svg" alt="arrows">
-      </div>
-
-      <p class="text">Вы подписаны на e-mail рассылку?</p>
-      <div class="check-box">
-
-        <img class="circle" src="svg/form-circle.svg" alt="arrows">
-        <span class="span-circle">Да</span>
-
-        <img class="circle" src="svg/form-empty-circle.svg" alt="arrows">
-        <span class="span-circle">Нет</span>
-      </div>
-      <p class="text">Расскажите, какой контект вы бы хотели видеть на нашем сайт? </p>
-
-      <form class="comment-form">
-        <div class="field-comment">Может, больше рецептов?</div>
-        <button class="send-button" type="submit">отправить</button>
-      </form>
-
-    </div>
-
-  </div>
   <div class="now-in-trend">
-    <h2>Сейчас в тренде</h2>
+    <h2 class="all-h2">Сейчас в тренде</h2>
   </div>
 
   <div class="polosa">
@@ -122,7 +134,7 @@
 
       <section class="news-card">
         <div class="news-preview">
-          <img src="img/last-post1.jpg" class="news-image" alt="sand">
+          <img src="images/last-post1.jpg" class="news-image" alt="sand">
         </div>
         <div class="text-info">
           <ul class="themas">
@@ -137,17 +149,15 @@
             </div>
           </div>
           <div class="news-content">
-            <p class="main-text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</p>
+            <p class="main-text p">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</p>
           </div>
         </div>
-        <div class="grey-polosa">
-
-        </div>
+        
       </section>
 
       <section class="news-card">
         <div class="news-preview">
-          <img src="img/last-post2.jpg" class="news-image" alt="sand">
+          <img src="images/last-post2.jpg" class="news-image" alt="sand">
         </div>
         <div class="text-info">
           <ul class="themas">
@@ -162,17 +172,15 @@
             </div>
           </div>
           <div class="news-content">
-            <p class="main-text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+            <p class="main-text p">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
           </div>
         </div>
-        <div class="grey-polosa">
-
-        </div>
+      
       </section>
 
       <section class="news-card">
         <div class="news-preview">
-          <img src="img/last-post3.jpg" class="news-image" alt="sand">
+          <img src="images/last-post3.jpg" class="news-image" alt="sand">
         </div>
         <div class="text-info">
           <ul class="themas">
@@ -186,18 +194,16 @@
             </div>
           </div>
           <div class="news-content">
-            <p class="main-text">Лето на носу, а с ним и музыкальные фестивали. На каком же их них мы разобьем свою палатку?</p>
-            <p class="main-text">Мы составили список лучших летних фестивалей по всему миру.</p>
+            <p class="main-text p">Лето на носу, а с ним и музыкальные фестивали. На каком же их них мы разобьем свою палатку?</p>
+            <p class="main-text p">Мы составили список лучших летних фестивалей по всему миру.</p>
           </div>
         </div>
-        <div class="grey-polosa">
-
-        </div>
+     
       </section>
 
       <section class="news-card">
         <div class="news-preview">
-          <img src="img/last-post4.jpg" class="news-image" alt="sand">
+          <img src="images/last-post4.jpg" class="news-image" alt="sand">
         </div>
         <div class="text-info">
           <ul class="themas">
@@ -212,17 +218,15 @@
             </div>
           </div>
           <div class="news-content">
-            <p class="main-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+            <p class="main-text p">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
           </div>
         </div>
-        <div class="grey-polosa">
-
-        </div>
+        
       </section>
 
       <section class="news-card">
         <div class="news-preview">
-          <img src="img/last-post5.jpg" class="news-image" alt="sand">
+          <img src="images/last-post5.jpg" class="news-image" alt="sand">
         </div>
         <div class="text-info">
           <ul class="themas">
@@ -238,12 +242,10 @@
             </div>
           </div>
           <div class="news-content">
-            <p class="main-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+            <p class="main-text p">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
           </div>
         </div>
-        <div class="grey-polosa">
-
-        </div>
+       
       </section>
 
     </main>
@@ -256,49 +258,49 @@
         </div>
 
         <div class="last-post">
-          <img src="img/2.jpg" alt="2">
+          <img src="images/2.jpg" alt="2">
           <div class="last-post-list">
             <div class="news-date">14 июня 2019 </div>
-            <h5 class="last-post-link"><a href="#0">10 мест, ради которых стоит проснуться</a></h5>
+            <h5 class="last-post-link "><a class="a-news-name" href="#0">10 мест, ради которых стоит проснуться</a></h5>
           </div>
         </div>
 
         <div class="last-post">
-          <img src="img/151.jpg" alt="7">
+          <img src="images/151.jpg" alt="7">
           <div class="last-post-list">
             <div class="news-date">14 июня 2019 </div>
-            <h5 class="last-post-link">
-              <a href="#0">йога для домашних</a>
+            <h5 class="last-post-link ">
+              <a class="a-news-name" href="#0">йога для домашних</a>
             </h5>
           </div>
         </div>
 
         <div class="last-post">
-          <img src="img/45.jpg" alt="45">
+          <img src="images/45.jpg" alt="45">
           <div class="last-post-list">
             <div class="news-date">14 июня 2019 </div>
-            <h5 class="last-post-link">
-              <a href="#0">как мы превратили классное место в балкон</a>
+            <h5 class="last-post-link ">
+              <a class="a-news-name" href="#0">как мы превратили классное место в балкон</a>
             </h5>
           </div>
         </div>
 
         <div class="last-post">
-          <img src="img/501.jpg" alt="151">
+          <img src="images/501.jpg" alt="151">
           <div class="last-post-list">
             <div class="news-date">14 июня 2019</div>
-            <h5 class="last-post-link">
-              <a href="#0">Кулинарный подход к науке</a>
+            <h5 class="last-post-link ">
+              <a class="a-news-name" href="#0">Кулинарный подход к науке</a>
             </h5>
           </div>
         </div>
 
         <div class="last-post">
-          <img src="img/7.jpg" alt="501">
+          <img src="images/7.jpg" alt="501">
           <div class="last-post-list">
             <div class="news-date">14 июня 2019 </div>
             <h5 class="last-post-link">
-              <a href="#0">лучшие прически для распущенных волос</a>
+              <a class="a-news-name" href="#0">лучшие прически для распущенных волос</a>
             </h5>
           </div>
         </div>
@@ -307,22 +309,23 @@
 
       <div class="aside-posts">
         <form class="search-form">
-          <input id="sear" type="search" class="search-field" placeholder="Найти..." required>
-          <label for="sear">
-            <span></span>
+          <label class="label">
+            <span class="hidden-text">Введите поисковой запрос</span>
+            <input class="search-field" type="search" placeholder="Найти..." required> 
           </label>
           <button class="button" type="submit"></button>
         </form>
       </div>
+
       <div class="aside-posts">
         <div class="last-posts-header">
           <h4 class="aside-news-title">Рассылка</h4>
         </div>
         <div class="email">
           <form class="subscribe">
-            <input id="mail" type="email" class="email-field" placeholder="Ваш email-адрес" required>
-            <label for="mail">
-              <span></span>
+            <label class="label">
+              <span class="hidden-text">Введите адрес почты</span>
+              <input class="email-field" type="email"  placeholder="Ваш email-адрес" required>
             </label>
             <button class="email-button" type="submit">подписаться</button>
           </form>
@@ -378,17 +381,20 @@
   </div>
 
   <div class="now-in-trend">
-    <h2>Наши изделия</h2>
+    <h2 class="all-h2">Наши изделия</h2>
   </div>
   <div class="last-last">
     <div class="last">
-      <div class="first-img">
-        <img src="img/shop-item-desk1.jpg" alt="desk2">
-      </div>
+      <picture class="picture">
+        <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+        <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+        <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+        <img class="first-img" src="images/shop-item-desk1.jpg" alt="декоративная подушка">
+      </picture>
       <div class="squad-border">
         <div class="text-bottom">
-          <h5>подушки на диван</h5>
-          <p class="text-product">Набор из двух подушек с модными принтами. Виде о создании <a href="*" class="a-product">здесь.</a></p>
+          <h5 class="all-h5">подушки на диван</h5>
+          <p class="text-product p">Набор из двух подушек с модными принтами. Виде о создании <a href="*" class="a-product">здесь.</a></p>
         </div>
         <div class="bottom-product">
           <div class="price">
@@ -399,14 +405,18 @@
         </div>
       </div>
     </div>
+
     <div class="last">
-      <div class="first-img">
-        <img src="img/shop-item-desk2.jpg" alt="desk2">
-      </div>
+      <picture class="picture">
+        <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+        <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+        <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+        <img class="first-img" src="images/shop-item-desk2.jpg" alt="кукла зайчик">
+      </picture>
       <div class="squad-border">
         <div class="text-bottom">
-          <h5>Кукла "зайчик"</h5>
-          <p class="text-product">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="*" class="a-product">весеняя серия постов</a> в блоге и несколько подкастов.</p>
+          <h5 class="all-h5">Кукла "зайчик"</h5>
+          <p class="text-product p">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="*" class="a-product">весеняя серия постов</a> в блоге и несколько подкастов.</p>
         </div>
         <div class="bottom-product">
           <div class="price">
@@ -416,14 +426,18 @@
         </div>
       </div>
     </div>
+    
     <div class="last">
-      <div class="first-img">
-        <img src="img/shop-item-desk3.jpg" alt="desk3">
-      </div>
+      <picture class="picture">
+        <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+        <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+        <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+        <img class="first-img" src="images/shop-item-desk3.jpg" alt="рамка">
+      </picture>
       <div class="squad-border">
         <div class="text-bottom">
-          <h5>шестиугольная рамка</h5>
-          <p class="text-product">Необычная рамка дял украшения дома из видео. <a href="*" class="a-product">"Как сделать рамку из подручных средств за 30 минут"</a></p>
+          <h5 class="all-h5">шестиугольная рамка</h5>
+          <p class="text-product p">Необычная рамка дял украшения дома из видео. <a href="*" class="a-product">"Как сделать рамку из подручных средств за 30 минут"</a></p>
         </div>
         <div class="bottom-product">
           <div class="price">
@@ -438,11 +452,11 @@
   <footer>
     <address class="social-links">
       <ul class="image-box">
-        <li class="image-list1"> <a href="#" class="image-link1"> </a> </li>
-        <li class="image-list2"> <a href="#" class="image-link2"> </a> </li>
-        <li class="image-list3"> <a href="#" class="image-link3"> </a> </li>
-        <li class="image-list4"> <a href="#" class="image-link4"> </a> </li>
-        <li class="image-list5"> <a href="#" class="image-link5"> </a> </li>
+        <li class="image-list1"> <a href="#" class="image-link1"><span class="hidden-text">Профиль Твиттера</span></a> </li>
+        <li class="image-list2"> <a href="#" class="image-link2"><span class="hidden-text">Профиль Пинтереста</span></a> </li>
+        <li class="image-list3"> <a href="#" class="image-link3"><span class="hidden-text">Профиль Фейсбука</span></a> </li>
+        <li class="image-list4"> <a href="#" class="image-link4"><span class="hidden-text">Профиль Инстаграмма</span></a> </li>
+        <li class="image-list5"> <a href="#" class="image-link5"><span class="hidden-text">Профиль Тамблера</span></a> </li>
       </ul>
     </address>
 
