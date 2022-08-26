@@ -127,6 +127,7 @@ textarea.field {
   position:fixed;
   top:0px;
   z-index: 10;
+  display:none;
 }
 
 @media (max-width: 640px) {
